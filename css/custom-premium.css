@@ -1,0 +1,95 @@
+/* Custom styles for Health Club Massage Sofia */
+
+:root {
+    --primary-color: #2A6D74;
+    --primary-gradient: linear-gradient(135deg, #2A6D74 0%, #1a4d52 100%);
+    --accent-gradient: linear-gradient(90deg, #2A6D74, #4db6ac);
+    --dark-bg-gradient: linear-gradient(135deg, #2b2d42 0%, #1a1b26 100%);
+    --grey-gradient: linear-gradient(135deg, #495057 0%, #212529 100%);
+    --light-gradient: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.modern-heading {
+    background: linear-gradient(45deg, #2c3e50 10%, var(--primary-color) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800 !important;
+}
+
+.section-heading-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.section-heading-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+}
+
+/* Package Cards */
+.package-card {
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    overflow: hidden;
+}
+
+.package-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.package-card .card-header {
+    padding: 1.5rem !important;
+    border: none !important;
+}
+
+.package-card .card-header h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.package-card .card-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 1.5rem 0;
+}
+
+.package-card ul li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+}
+
+/* Header Gradients - Standardized to Primary or Gray */
+.header-gradient-primary {
+    background: var(--primary-gradient);
+    color: white !important;
+}
+
+.header-gradient-dark {
+    background: var(--dark-bg-gradient);
+    color: white !important;
+}
+
+.header-gradient-grey {
+    background: var(--grey-gradient);
+    color: white !important;
+}
+
+.header-gradient-standard {
+    background: var(--light-gradient);
+    color: #212529 !important;
+}
