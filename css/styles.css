@@ -12459,13 +12459,14 @@ header.masthead .masthead-heading {
 @media (max-width: 767.98px) {
   header.masthead {
     height: 100vh;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 15vh;
+    /* Push text higher */
+    padding-bottom: 15vh;
+    /* Space from bottom */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 10vh;
-    /* Push content to bottom 3/8ths roughly */
+    justify-content: flex-start;
+    /* Align from top but with padding */
   }
 
   .video-main {
@@ -12473,46 +12474,58 @@ header.masthead .masthead-heading {
     object-fit: cover;
   }
 
+  header.masthead .masthead-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
   header.masthead .masthead-subheading {
-    font-size: 1.25rem !important;
+    font-size: 1.8rem !important;
+    /* Bigger */
     margin-bottom: 1rem !important;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9) !important;
   }
 
   header.masthead .masthead-heading {
-    font-size: 2.5rem !important;
-    /* Smaller but more readable */
-    line-height: 2.8rem !important;
-    margin-bottom: 1.5rem !important;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1) !important;
+    font-size: 3.2rem !important;
+    /* Impactful */
+    line-height: 3.4rem !important;
+    margin-bottom: 2rem !important;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 1) !important;
   }
 
   header.masthead .masthead-paragraph {
-    font-size: 1.1rem !important;
-    line-height: 1.3rem !important;
-    margin-bottom: 2rem !important;
+    font-size: 1.4rem !important;
+    /* Bigger */
+    line-height: 1.6rem !important;
+    margin-bottom: auto !important;
+    /* Pushes subsequent siblings to the bottom */
     padding: 0 1rem;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9) !important;
   }
 
   header.masthead .btn-xl {
-    padding: 1.25rem 2.5rem !important;
-    font-size: 1.2rem !important;
-    width: 80%;
-    max-width: 300px;
+    padding: 1.4rem 2.8rem !important;
+    /* Slightly bigger button */
+    font-size: 1.3rem !important;
+    width: 85%;
+    max-width: 320px;
     margin: 0 auto !important;
     display: block;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   }
 
   header.masthead .mt-2 {
-    margin-top: 1.5rem !important;
+    margin-top: 2rem !important;
+    /* More space between button and phone */
   }
 
   header.masthead a.text-white.bg-primary {
-    font-size: 1.1rem !important;
-    padding: 0.5rem 1rem !important;
-    border-radius: 5px;
+    font-size: 1.3rem !important;
+    /* Bigger phone number */
+    padding: 0.6rem 1.2rem !important;
+    border-radius: 8px;
     display: inline-block;
   }
 }
