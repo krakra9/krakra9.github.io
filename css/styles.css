@@ -12306,8 +12306,6 @@ p {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   background-color: #212529;
 }
 
@@ -12345,8 +12343,6 @@ p {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
     border: none;
     background-color: transparent;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
@@ -12396,7 +12392,7 @@ header.masthead {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 500px;
+  height: 100vh;
 }
 
 .masthead-video-bg {
@@ -12445,7 +12441,7 @@ header.masthead .masthead-subheading {
 header.masthead .masthead-paragraph {
   font-size: 1.4rem;
   font-style: italic;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 4px black;
   line-height: 1.4rem;
   margin-bottom: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -12465,11 +12461,59 @@ header.masthead .masthead-heading {
     height: 100vh;
     padding-top: 0;
     padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10vh;
+    /* Push content to bottom 3/8ths roughly */
   }
 
   .video-main {
     width: 100%;
     object-fit: cover;
+  }
+
+  header.masthead .masthead-subheading {
+    font-size: 1.25rem !important;
+    margin-bottom: 1rem !important;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9) !important;
+  }
+
+  header.masthead .masthead-heading {
+    font-size: 2.5rem !important;
+    /* Smaller but more readable */
+    line-height: 2.8rem !important;
+    margin-bottom: 1.5rem !important;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1) !important;
+  }
+
+  header.masthead .masthead-paragraph {
+    font-size: 1.1rem !important;
+    line-height: 1.3rem !important;
+    margin-bottom: 2rem !important;
+    padding: 0 1rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9) !important;
+  }
+
+  header.masthead .btn-xl {
+    padding: 1.25rem 2.5rem !important;
+    font-size: 1.2rem !important;
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto !important;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  header.masthead .mt-2 {
+    margin-top: 1.5rem !important;
+  }
+
+  header.masthead a.text-white.bg-primary {
+    font-size: 1.1rem !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 5px;
+    display: inline-block;
   }
 }
 
@@ -12477,8 +12521,7 @@ header.masthead .masthead-heading {
   header.masthead {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
-    height: 80vh;
-    /* Adjust as needed for desktop */
+    height: 100vh;
   }
 
   header.masthead .masthead-subheading {
