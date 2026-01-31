@@ -54,15 +54,24 @@
 
     <!-- Masthead-->
     <header class="masthead">
-        <div class=background_image>
+        <div class="masthead-video-bg">
+            <video class="video-fill" autoplay muted loop playsinline>
+                <source src="assets/videos/background.mov" type="video/quicktime">
+                <source src="assets/videos/background.mov" type="video/mp4">
+            </video>
+            <video class="video-main" autoplay muted loop playsinline>
+                <source src="assets/videos/background.mov" type="video/quicktime">
+                <source src="assets/videos/background.mov" type="video/mp4">
+            </video>
         </div>
-        <div class="container">
+        <div class="container masthead-content">
             <div class="masthead-subheading">Отпускащ, добър за здравето масаж</div>
             <div class="masthead-heading text-uppercase">Сбогувай се с болките в тялото!</div>
             <script id="setmore_script" type="text/javascript"
                 src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js">
                 </script>
-            <div class="masthead-paragraph">Тук в Health Club подхождаме строго индивидуално спрямо Вашите проблеми и желания!</div>
+            <div class="masthead-paragraph">Тук в Health Club подхождаме строго индивидуално спрямо Вашите проблеми и
+                желания!</div>
             <a class="btn btn-primary btn-xl text-uppercase" id="Setmore_button_iframe"
                 href="https://booking.setmore.com/scheduleappointment/1e67452c-67a2-4e3c-bc43-93393d1f4171">
                 Запази час
@@ -107,7 +116,8 @@
             </div>
             <div class="text-center">
                 <h5>Когато има застъпващи се часове работим заедно в един ден!</h5>
-                <a class="btn btn-primary btn-xl text-uppercase mb-3" style="text-align: center" id="Setmore_button_iframe"
+                <a class="btn btn-primary btn-xl text-uppercase mb-3" style="text-align: center"
+                    id="Setmore_button_iframe"
                     href="https://booking.setmore.com/scheduleappointment/1e67452c-67a2-4e3c-bc43-93393d1f4171">Запази
                     си
                     час</a>
@@ -127,21 +137,27 @@
         <div class="container">
             <div class="slider-wrapper">
                 <button id="prev-slide" class="slide-button material-symbols-rounded">
-                    <
-                </button>
-                <ul class="image-list">
-                    <img class="image-item rounded-3" src="assets/img/certificates/certificate5.jpeg" alt="img-4" />
-                    <img class="image-item rounded-3" src="assets/img/certificates/certificate1.jpeg" alt="img-2" />
-                    <img class="image-item rounded-3" src="assets/img/certificates/certificate2.jpeg" alt="img-3" />
-                    <img class="image-item rounded-3" src="assets/img/certificates/certificate3.jpeg" alt="img-4" />
-                    <img class="image-item rounded-3" src="assets/img/certificates/certificate4.jpeg" alt="img-3" />
-                    <img class="image-item rounded-3" src="assets/img/certificates/certificate6.jpeg" alt="img-3" />
-                    <img class="image-item rounded-3" src="assets/img/certificates/certificate7.jpeg" alt="img-4" />
+                    < </button>
+                        <ul class="image-list">
+                            <img class="image-item rounded-3" src="assets/img/certificates/certificate5.jpeg"
+                                alt="img-4" />
+                            <img class="image-item rounded-3" src="assets/img/certificates/certificate1.jpeg"
+                                alt="img-2" />
+                            <img class="image-item rounded-3" src="assets/img/certificates/certificate2.jpeg"
+                                alt="img-3" />
+                            <img class="image-item rounded-3" src="assets/img/certificates/certificate3.jpeg"
+                                alt="img-4" />
+                            <img class="image-item rounded-3" src="assets/img/certificates/certificate4.jpeg"
+                                alt="img-3" />
+                            <img class="image-item rounded-3" src="assets/img/certificates/certificate6.jpeg"
+                                alt="img-3" />
+                            <img class="image-item rounded-3" src="assets/img/certificates/certificate7.jpeg"
+                                alt="img-4" />
 
-                </ul>
-                <button id="next-slide" class="slide-button material-symbols-rounded">
-                    >
-                </button>
+                        </ul>
+                        <button id="next-slide" class="slide-button material-symbols-rounded">
+                            >
+                        </button>
             </div>
             <div class="slider-scrollbar">
                 <div class="scrollbar-track">
@@ -308,43 +324,43 @@
             <div class="table-responsive mb-3">
                 <table class="table table-striped">
                     <thead>
-                    <tr>
-                        <th scope="col">Процедури</th>
-                        <th scope="col">Нормална цена</th>
-                        <th scope="col">Промо цена</th>
-                    </tr>
+                        <tr>
+                            <th scope="col">Процедури</th>
+                            <th scope="col">Нормална цена</th>
+                            <th scope="col">Промо цена</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">Частичен масаж + Вендузи</th>
-                        <td>70лв/35.79€</td>
-                        <td>60лв/30.67€</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Цялостен масаж + Вендузи</th>
-                        <td>90лв/46.01€</td>
-                        <td>75лв/38.34€</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Частичен масаж + Пресотерапия</th>
-                        <td>80лв/40.90€</td>
-                        <td>70лв/35.79€</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Цялостен масаж + Пресотерапия</th>
-                        <td>80лв/40.90€</td>
-                        <td>100лв/51.12€</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Частичен масаж + Вендузи + Пресотерапия</th>
-                        <td>80лв/40.90€</td>
-                        <td>100лв/51.12€</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Цялостен масаж + Вендузи + Пресотерапия</th>
-                        <td>100лв/51.12€</td>
-                        <td>120лв/61.35€</td>
-                    </tr>
+                        <tr>
+                            <th scope="row">Частичен масаж + Вендузи</th>
+                            <td>70лв/35.79€</td>
+                            <td>60лв/30.67€</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Цялостен масаж + Вендузи</th>
+                            <td>90лв/46.01€</td>
+                            <td>75лв/38.34€</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Частичен масаж + Пресотерапия</th>
+                            <td>80лв/40.90€</td>
+                            <td>70лв/35.79€</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Цялостен масаж + Пресотерапия</th>
+                            <td>80лв/40.90€</td>
+                            <td>100лв/51.12€</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Частичен масаж + Вендузи + Пресотерапия</th>
+                            <td>80лв/40.90€</td>
+                            <td>100лв/51.12€</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Цялостен масаж + Вендузи + Пресотерапия</th>
+                            <td>100лв/51.12€</td>
+                            <td>120лв/61.35€</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
