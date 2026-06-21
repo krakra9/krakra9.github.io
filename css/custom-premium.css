@@ -93,3 +93,261 @@
     background: var(--light-gradient);
     color: #212529 !important;
 }
+/* Modern Team Cards */
+.modern-team-card {
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    cursor: pointer;
+}
+
+.modern-team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modern-team-card .img-container {
+    width: 100%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    position: relative;
+}
+
+.modern-team-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.6s ease;
+}
+
+.modern-team-card:hover img {
+    transform: scale(1.05);
+}
+
+.modern-team-card .card-body {
+    padding: 1.5rem;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.modern-team-card .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.modern-team-card .card-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.modern-team-card .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, rgba(42, 109, 116, 0.9) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.modern-team-card:hover .img-overlay {
+    opacity: 1;
+}
+
+.modern-team-card .view-more {
+    font-weight: 600;
+    font-size: 1.1rem;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.modern-team-card:hover .view-more {
+    transform: translateY(0);
+}
+
+/* Mobile adjustments for Team Cards */
+@media (max-width: 768px) {
+    .modern-team-card {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .modern-team-card .img-overlay {
+        opacity: 1;
+        background: linear-gradient(to bottom, transparent 60%, rgba(42, 109, 116, 0.85) 100%);
+    }
+    
+    .modern-team-card .view-more {
+        transform: translateY(0);
+    }
+}
+
+/* Reviews Carousel */
+.reviews-carousel-container {
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.reviews-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1.5rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+
+.reviews-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.review-card {
+    flex: 0 0 auto;
+    width: 320px;
+    scroll-snap-align: start;
+    scroll-margin-inline-start: 1rem;
+    background: #fdfdfd;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.review-card .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review-card .review-avatar {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.review-card .review-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review-card .google-badge {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.review-card .review-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-card .review-meta h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.review-card .review-meta small {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.review-card .review-stars {
+    color: #fbbc04; /* Google yellow */
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.review-card .review-text {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* limit to 6 lines */
+    -webkit-box-orient: vertical;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.carousel-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.carousel-btn.prev {
+    left: -15px;
+}
+
+.carousel-btn.next {
+    right: -15px;
+}
+
+@media (max-width: 768px) {
+    .carousel-btn {
+        display: none; /* Hide buttons on mobile, rely on swipe */
+    }
+    .review-card {
+        width: 280px; /* slightly narrower on mobile */
+    }
+}

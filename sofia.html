@@ -42,11 +42,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#certificates">Сертификати</a></li>
+
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Процедури</a></li>
                     <li class="nav-item"><a class="nav-link" href="#packages">Пакети</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Екип</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonial">Клиентски Отзиви</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#studio">Адрес</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#studio">Контакти</a></li>
                     <a class="btn btn-primary btn-s text-uppercase" id="Setmore_button_iframe"
                         href="https://healthclubsofia.setmore.com">
                         Запази час
@@ -71,7 +73,7 @@
             </video>
         </div>
         <div class="container masthead-content">
-            <div class="masthead-subheading">Полезно не означава неприятно</div>
+            <div class="masthead-subheading">Масажът- грижата, която отключва прогреса</div>
             <div class="masthead-heading text-uppercase">Изкуството на масажа в София</div>
             <script id="setmore_script" type="text/javascript"
                 src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js">
@@ -134,46 +136,6 @@
         </div>
     </section> -->
 
-    <!-- Certificates-->
-    <section class="page-section bg-white" id="certificates">
-        <div class="text-center">
-            <div class="section-heading-wrapper">
-                <h2 class="section-heading text-uppercase modern-heading">Специалисти в областта на масажа</h2>
-            </div>
-            <h3 class="section-subheading text-muted">Обучения от световно признати майстори!</h3>
-        </div>
-        <div class="container">
-            <div class="slider-wrapper">
-                <button id="prev-slide" class="slide-button material-symbols-rounded">
-                    < </button>
-                        <ul class="image-list">
-                            <img class="image-item rounded-3" src="assets/img/certificates/certificate5.jpeg"
-                                alt="img-4" />
-                            <img class="image-item rounded-3" src="assets/img/certificates/certificate1.jpeg"
-                                alt="img-2" />
-                            <img class="image-item rounded-3" src="assets/img/certificates/certificate2.jpeg"
-                                alt="img-3" />
-                            <img class="image-item rounded-3" src="assets/img/certificates/certificate3.jpeg"
-                                alt="img-4" />
-                            <img class="image-item rounded-3" src="assets/img/certificates/certificate4.jpeg"
-                                alt="img-3" />
-                            <img class="image-item rounded-3" src="assets/img/certificates/certificate6.jpeg"
-                                alt="img-3" />
-                            <img class="image-item rounded-3" src="assets/img/certificates/certificate7.jpeg"
-                                alt="img-4" />
-
-                        </ul>
-                        <button id="next-slide" class="slide-button material-symbols-rounded">
-                            >
-                        </button>
-            </div>
-            <div class="slider-scrollbar">
-                <div class="scrollbar-track">
-                    <div class="scrollbar-thumb"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Services-->
     <section class="page-section bg-light" id="portfolio">
@@ -258,7 +220,7 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid rounded-top" src="assets/img/portfolio/building/cupping.png"
+                            <img class="img-fluid rounded-top" src="assets/img/portfolio/building/venduzi_new.jpg"
                                 alt="..." />
                         </a>
                         <div class="portfolio-caption">
@@ -614,32 +576,166 @@
                 </div>
                 <h3 class="section-subheading text-muted">Ето какво мислят нашите клиенти!</h3>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/customer1.jpeg" alt="..." />
-                        <h4>Белослава Йорданова</h4>
-                        <p>"Чувствах се страхотно след масажа!"</p>
+            <div class="reviews-carousel-container">
+                <button class="carousel-btn prev" onclick="document.getElementById('reviews-carousel-sofia').scrollBy({left: -320, behavior: 'smooth'})">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="reviews-carousel" id="reviews-carousel-sofia">
+                    <!-- Card 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="assets/img/reviews/image1.png" alt="Yuliyan Atanasov">
+                                <div class="google-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="12" height="12" alt="G"></div>
+                            </div>
+                            <div class="review-meta">
+                                <h5>Yuliyan Atanasov <i class="fas fa-check-circle text-muted" style="font-size:0.8rem"></i></h5>
+                                <small>преди няколко месеца</small>
+                            </div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="review-text">Препоръчвам, днес беше първият масаж с Еманоел. Хубаво чисто и най вече знае какво прави. Имам травма и усещам осезаемо подобрение. Масаж+вендузи+adjustment на врата. Благодаря 🙏👍✌️…</div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="assets/img/reviews/image2.png" alt="Martin Nikolov">
+                                <div class="google-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="12" height="12" alt="G"></div>
+                            </div>
+                            <div class="review-meta">
+                                <h5>Martin Nikolov <i class="fas fa-check-circle text-muted" style="font-size:0.8rem"></i></h5>
+                                <small>преди няколко месеца</small>
+                            </div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="review-text">Страхотно място, носещо спокойствие! С невероятни млади професионалисти - силно препоръчвам!</div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="assets/img/reviews/image3.png" alt="Станислав Стоянов">
+                                <div class="google-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="12" height="12" alt="G"></div>
+                            </div>
+                            <div class="review-meta">
+                                <h5>Станислав Стоянов <i class="fas fa-check-circle text-muted" style="font-size:0.8rem"></i></h5>
+                                <small>преди няколко месеца</small>
+                            </div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="review-text">Уникално, ново и чисто място! Получих прекрасен първи масаж и указания за специализирани балансиращи упражнения. Приятна обстановка, препоръчвам! :)</div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="assets/img/reviews/image4.png" alt="Tsvetelina Stefanova">
+                                <div class="google-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="12" height="12" alt="G"></div>
+                            </div>
+                            <div class="review-meta">
+                                <h5>Tsvetelina Stefanova <i class="fas fa-check-circle text-muted" style="font-size:0.8rem"></i></h5>
+                                <small>преди няколко месеца</small>
+                            </div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="review-text">Студиото е ново, чисто и с уютна атмосфера. Екипът е грижовен с отлична подготовка. Вършат работата си с желание и отдаденост. Винаги избирам Health Club. 😊…</div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="assets/img/reviews/image5.png" alt="Roger Dodson">
+                                <div class="google-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="12" height="12" alt="G"></div>
+                            </div>
+                            <div class="review-meta">
+                                <h5>Roger Dodson <i class="fas fa-check-circle text-muted" style="font-size:0.8rem"></i></h5>
+                                <small>преди няколко месеца</small>
+                            </div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="review-text">Много добри специалисти! Разполагат и с голям набор от уреди и пособия, които правят процедурите им още по-ефективни! Горещо препоръчвам!</div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="assets/img/reviews/image6.png" alt="Радослав Панайотов">
+                                <div class="google-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="12" height="12" alt="G"></div>
+                            </div>
+                            <div class="review-meta">
+                                <h5>Радослав Панайотов <i class="fas fa-check-circle text-muted" style="font-size:0.8rem"></i></h5>
+                                <small>преди няколко месеца</small>
+                            </div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="review-text">Уникални сте момчета 5/5 най- добрите сте! Силно препоръчвам</div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="assets/img/reviews/image7.png" alt="Danny Ivanov">
+                                <div class="google-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="12" height="12" alt="G"></div>
+                            </div>
+                            <div class="review-meta">
+                                <h5>Danny Ivanov <i class="fas fa-check-circle text-muted" style="font-size:0.8rem"></i></h5>
+                                <small>преди няколко месеца</small>
+                            </div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="review-text">Професионалисти с изключителни качества и индивидуално отношение към клиента! Записвам си час за ново посещение веднага</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="assets/img/reviews/image8.png" alt="Petya Hristova">
+                                <div class="google-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="12" height="12" alt="G"></div>
+                            </div>
+                            <div class="review-meta">
+                                <h5>Petya Hristova <i class="fas fa-check-circle text-muted" style="font-size:0.8rem"></i></h5>
+                                <small>преди няколко месеца</small>
+                            </div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="review-text">Атмосферата беше приятна и уютна, а масажа - целебен. Благодаря ти, Еманоел!</div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="assets/img/reviews/image9.png" alt="Емил Георгиев">
+                                <div class="google-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="12" height="12" alt="G"></div>
+                            </div>
+                            <div class="review-meta">
+                                <h5>Емил Георгиев <i class="fas fa-check-circle text-muted" style="font-size:0.8rem"></i></h5>
+                                <small>преди няколко месеца</small>
+                            </div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="review-text">Супер са! Ще ги посетя отново!</div>
+                    </div>
+                    <!-- Card 10 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="assets/img/reviews/image10.png" alt="Georgi Nedyalkov">
+                                <div class="google-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="12" height="12" alt="G"></div>
+                            </div>
+                            <div class="review-meta">
+                                <h5>Georgi Nedyalkov <i class="fas fa-check-circle text-muted" style="font-size:0.8rem"></i></h5>
+                                <small>преди няколко месеца</small>
+                            </div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="review-text">Професионално и приятелско отношение, препоръчвам!</div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/customer2.jpeg" alt="..." />
-                        <h4>Ивайло Иванов</h4>
-                        <p>"Най-добрият масаж!"</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/customer3.jpeg" alt="..." />
-                        <h4>Алберто</h4>
-                        <p>"От името на атлет мога да кажа,че услугите им са 10/10."</p>
-                    </div>
-                </div>
+                <button class="carousel-btn next" onclick="document.getElementById('reviews-carousel-sofia').scrollBy({left: 320, behavior: 'smooth'})">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
-            <!-- <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">We love seeing our clients happy. This is why we always make sure we meet your expectations!</p></div>
-                </div> -->
         </div>
         <div class="text-center">
             <a class="btn btn-primary btn-xl text-uppercase " style="text-align: center" id="Setmore_button_iframe"
@@ -648,6 +744,181 @@
         </div>
         <div class="mt-2 text-center">
             <a class="text-white bg-primary" href="tel:++359878808424">+359878808424</a>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <div class="section-heading-wrapper">
+                    <h2 class="section-heading text-uppercase modern-heading">Екип</h2>
+                </div>
+                <h3 class="section-subheading text-muted">Запознайте се с нашите специалисти</h3>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Team Member 1 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a class="modern-team-card" data-bs-toggle="modal" href="#teamModal1">
+                        <div class="img-container">
+                            <img src="assets/img/team/deyvid.jpg" alt="Дейвид Чичев" />
+                            <div class="img-overlay">
+                                <div class="view-more"><i class="fas fa-plus mb-2"></i><br>Виж повече</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Дейвид Чичев</h4>
+                            <div class="card-subtitle">Масажист-терапевт</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a class="modern-team-card" data-bs-toggle="modal" href="#teamModal2">
+                        <div class="img-container">
+                            <img src="assets/img/team/emanuel.jpg" alt="Еманоел Манолчев" />
+                            <div class="img-overlay">
+                                <div class="view-more"><i class="fas fa-plus mb-2"></i><br>Виж повече</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Еманоел Манолчев</h4>
+                            <div class="card-subtitle">Масажист-терапевт</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a class="modern-team-card" data-bs-toggle="modal" href="#teamModal3">
+                        <div class="img-container">
+                            <img src="assets/img/team/velislav.jpg" alt="Велислав" />
+                            <div class="img-overlay">
+                                <div class="view-more"><i class="fas fa-plus mb-2"></i><br>Виж повече</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Велислав</h4>
+                            <div class="card-subtitle">Масажист-терапевт</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ-->
+    <section class="page-section bg-white" id="faq">
+        <div class="container">
+            <div class="text-center">
+                <div class="section-heading-wrapper">
+                    <h2 class="section-heading text-uppercase modern-heading">Често задавани въпроси</h2>
+                </div>
+                <h3 class="section-subheading text-muted">Имате въпроси? Ние имаме отговори!</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="accordionFAQ">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item mb-3" style="border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="font-weight: 600; color: var(--primary-color);">
+                                    Никога не съм бил/а на масаж - как да се подготвя?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Не е нужна специална подготовка - просто елате в удобно облекло. При пристигането Ви ще имате време спокойно да се настаните, да обсъдите с терапевта как се чувствате и какви са вашите нужди, след което ще имате няколко минути да се подготвите за масажа в стаята. По време на масажа тялото е покрито с кърпа, като се откриват само зоните, върху които се работи. Най-важното е да се чувствате комфортно - всичко останало ще бъде обяснено на място.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item mb-3" style="border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-weight: 600; color: var(--primary-color);">
+                                    Как да разбера кой масаж е най-подходящ за мен?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Ако се колебаете, най-добрият вариант е кратка консултация с терапевт, като може да си запишете час за нея - ще получите персонална препоръка. Масажът се определя според вашето състояние, начин на живот и цели (релакс, облекчаване на болка, възстановяване и др.). 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item mb-3" style="border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-weight: 600; color: var(--primary-color);">
+                                    При какви състояния и неразположения може да помогне масажът?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Масажът може да бъде полезен при мускулно напрежение, болки в гърба и врата, главоболие, стрес, умора и нарушения в съня. Също така подпомага възстановяването след физическо натоварване и подобрява кръвообращението и общия тонус на организма. 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item mb-3" style="border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="font-weight: 600; color: var(--primary-color);">
+                                    Само за физически активни хора ли са подходящи масажите?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Съвсем не. Масажът е подходящ за всеки - независимо дали спортувате активно или прекарвате дълги часове в седнало положение. Всъщност хората със заседнал начин на живот често имат още по-голяма нужда от него.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item mb-3" style="border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="font-weight: 600; color: var(--primary-color);">
+                                    Болезнен ли е масажът?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Масажът не трябва да бъде болезнен. Възможно е да усетите по-интензивен натиск в зони с натрупано напрежение, но той винаги се съобразява с вашия комфорт. Важно е да споделяте как се чувствате по време на процедурата, за да може натискът да бъде регулиран.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 6 -->
+                        <div class="accordion-item mb-3" style="border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="font-weight: 600; color: var(--primary-color);">
+                                    Има ли възможност за паркиране около студиото?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Да, в района има възможности за паркиране, а също и разполагаме с едно парко място в сградата. При нужда може да получите допълнителна информация при записване.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 7 -->
+                        <div class="accordion-item mb-3" style="border-radius: 10px; overflow: hidden; border: 1px solid var(--glass-border); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="font-weight: 600; color: var(--primary-color);">
+                                    В кои случаи масажът не е препоръчителен?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Масажът не се препоръчва при остри възпалителни състояния, висока температура, инфекциозни заболявания, открити рани, кожни инфекции или сериозни сърдечно-съдови проблеми, без консултация с лекар. При бременност, хронични заболявания или специфични здравословни състояния е добре предварително да се консултирате със наш специалист.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a class="btn btn-primary btn-xl text-uppercase " style="text-align: center" id="Setmore_button_iframe_faq_sofia"
+                    href="https://healthclubsofia.setmore.com">Запази си час</a>
+                <div class="mt-2 text-center">
+                    <a class="text-white bg-primary p-2 rounded" href="tel:+359878808424">+359878808424</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -774,8 +1045,7 @@
                                     </div>
                                 </div>
 
-                                <p>Правим тайландски, спортен, шведски и много други видове масаж. За максимално
-                                    удоволствие и релакс ползваме нагрято олио или ракия (пожелание).</p>
+                                <p>Масажът се изпълнява индивидуално, спрямо нуждите на клиента. Основната му цел е да отпусне мускулите, да подобри кръвообращението и да намали стреса. Подходящ е както за релаксация, така и при леки мускулни болки. Представлява различни масажни техники - поглаждане, изстискване, разтриване, масажиране, ударни - комбинация от различни методики. Може да бъде цялостен (цяло тяло) или частичен(горната част на тялото до зоната на задните части или от таз до края на краката).</p>
                                 <p><strong>Цялостен:</strong> 80 € за 90 минути / 60 € за 60 минути</p>
                                 <p><strong>Частичен:</strong> 45 € за 30 минути</p>
                                 <ul class="list-inline">
@@ -816,15 +1086,14 @@
                                 <div class="row align-items-center">
                                     <div class="col-6 my-lg-0">
                                         <img class="img-fluid grid-image rounded10"
-                                            src="assets/img/portfolio/building/cupping.png" alt="..." />
+                                            src="assets/img/portfolio/building/venduzi_new.jpg" alt="..." />
                                     </div>
                                     <div class="col-6 my-lg-0">
                                         <img class="img-fluid grid-image rounded10"
                                             src="assets/img/portfolio/building/cuppingGuy.png" alt="..." />
                                     </div>
                                 </div>
-                                <p>Вендузи са древна процедура за облекчаване на болка и подобряване на
-                                    кръвообращението.</p>
+                                <p>Вендузи терапията използва специални чашки, които създават вакуум върху кожата. Това подобрява кръвообращението и стимулира възстановяването на тъканите. Често оставя характерни кръгови следи, които изчезват след няколко дни. Прилага се при мускулни болки и напрежение.</p>
                                 <ul class="list-inline">
                                     <div class="row">
                                         <div class="col-md-6 mb-4">
@@ -866,8 +1135,7 @@
                                             src="assets/img/portfolio/building/massage.png" alt="..." />
                                     </div>
                                 </div>
-                                <p>С антицелулитен масаж кажете 'чао' на целулита! Тази процедура е отпускаща и помага
-                                    на тялото ви да стане по-тонизирано и красиво</p>
+                                <p>Антицелулитният масаж е по-интензивен и насочен към разграждане на мастните натрупвания под кожата. Използват се силни и дълбоки движения, включително натиск и размачкване. Подобрява микроциркулацията и тонуса на кожата. Често се комбинира с масла или кремове с активни съставки. Резултатите се виждат при редовни процедури.</p>
                                 <ul class="list-inline">
                                     <div class="row">
                                         <div class="col-md-6 mb-4">
@@ -913,8 +1181,7 @@
                                             src="assets/img/certificates/certificate1.jpeg" alt="..." />
                                     </div>
                                 </div>
-                                <p>Лимфният дренаж помага с изчистването от токсините и чувствато на свежест! Тази
-                                    процедура ще ви накара да се чувствате по-енергични и отпочинали.</p>
+                                <p>Лимфният дренаж е специализиран масаж, който стимулира лимфната система. Извършва се с леки, ритмични движения, които подпомагат извеждането на токсини от организма. Често се прилага при отоци, задържане на течности и след операции. Подобрява имунната функция и намалява усещането за тежест в крайниците.</p>
                                 <ul class="list-inline">
                                     <div class="row">
                                         <div class="col-md-6 mb-4">
@@ -962,9 +1229,7 @@
                                     </div>
                                 </div>
 
-                                <p>Подходящо както за атлети,така и за хора със заседнал начин на живот</p>
-                                <p>- Подпомага по-бързото възстановяване</p>
-                                <p>- Допринася за намаляване на оттоци/задържане на вода</p>
+                                <p>Представлява апаратна терапия, при която се използват специални ботуши, които се пълнят с въздух и създават ритмичен натиск върху краката. Стимулира лимфния поток и кръвообращението. Помага при отоци, умора и целулит. Процедурата е напълно безболезнена и релаксираща.</p>
                                 <ul class="list-inline">
                                     <div class="row">
                                         <div class="col-md-6 mb-4">
@@ -1007,11 +1272,7 @@
                                             src="assets/img/Services/aromatherapy.png" alt="Aromatherapy" />
                                     </div>
                                 </div>
-                                <p class="mt-4">Отпуснете се и се насладете на луксозна ароматерапия, която съчетава
-                                    лечебната сила на етеричните масла с релаксиращи масажни техники.</p>
-                                <p>- Намалява стреса и напрежението</p>
-                                <p>- Подобрява качеството на съня</p>
-                                <p>- Балансира тялото и духа</p>
+                                <p class="mt-4">Комбинира класически масаж с етерични масла. Маслата се подбират според нуждите - за релаксация, енергия или баланс. Терапията влияе както на тялото, така и на психиката чрез обонянието. Подобрява настроението и намалява стреса.</p>
                                 <p><strong>Цена: 70 € за 60 минути</strong></p>
                                 <ul class="list-inline">
                                     <div class="row mt-4">
@@ -1036,6 +1297,79 @@
             </div>
         </div>
     </div>
+    <!-- Team Modal 1 (Deyvid) -->
+    <div class="portfolio-modal modal fade" id="teamModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Дейвид Чичев</h2>
+                                <p class="item-intro text-muted">Масажист-терапевт</p>
+                                <img class="img-fluid d-block mx-auto rounded10 mb-4" src="assets/img/team/deyvid.jpg" alt="Дейвид Чичев" style="max-height: 500px; object-fit: contain;" />
+                                <p>Здравейте,<br>Казвам се Дейвид и моят път към масажите не беше лесен, но го приех като мисия, която искам да следвам. От малък спортът е част от живота ми и през годините съм натрупал много опит, знания и умения. Преминал съм през различни етапи, контузии и предизвикателства, които още в тийнейджърските ми години ме накараха да осъзная, че тялото е най-ценното нещо, което имаме, и че грижата за него е наша лична отговорност и мисия. Тогава открих масажа като важна част от възстановяването и още един начин да полагам грижа за тялото си. С времето и практиката разбрах, че да помагам на хора, които са преминали през моя път и заедно да споделяме опит, е едно от най-големите удовлетворения в моята работа. Постепенно в мен се появи желанието да бъда човекът, към когото клиентите могат да се обърнат за съвет, подкрепа и насока - човекът, който ще им помогне да избегнат грешките, които аз самият съм допускал по пътя си.</p>
+                                <button class="btn btn-primary btn-xl text-uppercase mt-3" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Затвори
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Modal 2 (Emanuel) -->
+    <div class="portfolio-modal modal fade" id="teamModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Еманоел Манолчев</h2>
+                                <p class="item-intro text-muted">Масажист-терапевт</p>
+                                <img class="img-fluid d-block mx-auto rounded10 mb-4" src="assets/img/team/emanuel.jpg" alt="Еманоел Манолчев" style="max-height: 500px; object-fit: contain;" />
+                                <p>Здравейте,<br>Казвам се Еманоел и света на масажите ме накраха да погледна от друг ъгъл моето здраве. Спортът винаги е бил голяма част от живота ми и след като претърпях сериозна травма в поясната област, разбрах колко е важно тялото ми да бъде в баланс. Това ме накара да изградя добра култура на възстановяване и да се запозная с масажите още преди да се превърнат в професия. От първия ден в университета усетих, че искам да следвам този път, а няколко години по-късно той се превърна в моя професионален път. Натрупах богат опит с най-различни клиенти както в България, така и в чужбина, което ме срещна с разнообразни предизвикателства и възможността да помогна за разрешаването на много от тях. Днес съм тук, за да окуражавам клиентите си да подобрят ежедневието си и да включат малки, но полезни навици в него, които да повишат качеството им на живот. Вярвам, че именно малките стъпки водят до големите промени, стига човек да е достатъчно постоянен и отговорен, за да продължи уверено напред.</p>
+                                <button class="btn btn-primary btn-xl text-uppercase mt-3" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Затвори
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Modal 3 (Velislav) -->
+    <div class="portfolio-modal modal fade" id="teamModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Велислав</h2>
+                                <p class="item-intro text-muted">Масажист-терапевт</p>
+                                <img class="img-fluid d-block mx-auto rounded10 mb-4" src="assets/img/team/velislav.jpg" alt="Велислав" style="max-height: 500px; object-fit: contain;" />
+                                <p>Привет,<br>Аз съм Велислав и като човек, който активно се занимава със спорт от малък, знаех, че добрите резултати не зависят само от тренировките, а и от начина, по който подготвяме телата си. Първият ми досег с масажа беше още в училище, когато започнах да масажирам съучениците си. Макар и без опит или техники, те оставаха много доволни и тогава си дадох сметката, че в бъдеще искам да науча правилната методика на масажа. Когато влязох в Националната спортна академия, с голям интерес започнах да изучавам човешката анатомия, след което записах и първият си курс по масажи. Извън обучението обичах да гледам видеа за различни масажни практики, като по този начин надграждах знанията си. В един момент усетих, че това е сферата, в която искам да се развивам професионално и с течение на времето, обученията и натрупаният опит, затвърдих убеждението си колко силно може да повлияе масажът на човек - не само физически, но и психически, дори емоционално. Именно това ме мотивира да помагам на хората и да им давам поне малко облекчение от "товара", който носят на раменете си.</p>
+                                <button class="btn btn-primary btn-xl text-uppercase mt-3" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Затвори
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
