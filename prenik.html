@@ -257,6 +257,129 @@
         </div>
     </section>
 
+    <section class="page-section" id="loyalty-program" style="background: radial-gradient(circle at top right, #2A6D74, #123539); color: white; padding-top: 2rem; padding-bottom: 2rem; position: relative; overflow: hidden; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <!-- Abstract decorative glow -->
+        <div style="position: absolute; top: -50%; left: -20%; width: 60%; height: 100%; background: radial-gradient(circle, rgba(77, 182, 172, 0.1) 0%, rgba(0,0,0,0) 70%); border-radius: 50%; pointer-events: none;"></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="row align-items-center">
+                <!-- Left Side: Graphics -->
+                <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                    <!-- Premium Stamp Card Graphic (Scaled Down) -->
+                    <div style="transform: rotate(-3deg); transition: transform 0.3s ease;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="auto" style="max-width: 300px; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.4));">
+                            <defs>
+                                <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                                    <stop offset="35%" style="stop-color:#f1f5f8;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+                                    <stop offset="85%" style="stop-color:#e2e8f0;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#388e96;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#1a4d52;stop-opacity:1" />
+                                </linearGradient>
+                                <filter id="innerShadow">
+                                    <feOffset dx="0" dy="3"/>
+                                    <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+                                    <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+                                    <feFlood flood-color="black" flood-opacity="0.15" result="color"/>
+                                    <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+                                    <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+                                </filter>
+                                <filter id="glow">
+                                    <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+                                    <feMerge>
+                                        <feMergeNode in="coloredBlur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            
+                            <!-- 3D Edge -->
+                            <rect x="12" y="14" width="480" height="280" rx="20" fill="rgba(0,0,0,0.15)" />
+                            
+                            <!-- Card Base -->
+                            <rect x="10" y="10" width="480" height="280" rx="20" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="2" />
+                            
+                            <!-- Inner dashed border to make it pop like a real card -->
+                            <rect x="25" y="25" width="450" height="250" rx="12" fill="none" stroke="#2A6D74" stroke-width="2" stroke-dasharray="8,6" opacity="0.3" />
+                            
+                            <!-- Header -->
+                            <text x="250" y="80" fill="url(#tealGrad)" font-family="Montserrat, sans-serif" font-size="34" font-weight="900" letter-spacing="5" text-anchor="middle" filter="drop-shadow(0 2px 2px rgba(255,255,255,0.8))">HEALTH CLUB</text>
+                            <text x="250" y="110" fill="#6c757d" font-family="Montserrat, sans-serif" font-size="14" letter-spacing="4" text-anchor="middle" font-weight="600" opacity="0.8">STAMP CARD</text>
+                            
+                            <!-- Stamp Circles -->
+                            <g transform="translate(0, 190)">
+                                <!-- Slot 1 -->
+                                <circle cx="95" cy="0" r="38" fill="#f4f6f7" stroke="#2A6D74" stroke-width="3" filter="url(#innerShadow)" />
+                                <text x="95" y="12" fill="#2A6D74" font-family="Montserrat, sans-serif" font-size="32" font-weight="800" text-anchor="middle">1</text>
+                                
+                                <!-- Slot 2 -->
+                                <circle cx="198" cy="0" r="38" fill="#f4f6f7" stroke="#2A6D74" stroke-width="3" filter="url(#innerShadow)" />
+                                <text x="198" y="12" fill="#2A6D74" font-family="Montserrat, sans-serif" font-size="32" font-weight="800" text-anchor="middle">2</text>
+                                
+                                <!-- Slot 3 -->
+                                <circle cx="301" cy="0" r="38" fill="#f4f6f7" stroke="#2A6D74" stroke-width="3" filter="url(#innerShadow)" />
+                                <text x="301" y="12" fill="#2A6D74" font-family="Montserrat, sans-serif" font-size="32" font-weight="800" text-anchor="middle">3</text>
+                                
+                                <!-- Slot 4 (Gift Box) -->
+                                <circle cx="405" cy="0" r="42" fill="url(#tealGrad)" filter="url(#glow)" />
+                                <circle cx="405" cy="0" r="42" fill="none" stroke="#ffffff" stroke-width="2" />
+                                
+                                <!-- Gift Box Icon -->
+                                <g transform="translate(393, -16)" stroke="#fff" stroke-width="2" fill="none">
+                                    <!-- Bow -->
+                                    <ellipse cx="8" cy="2" rx="4" ry="3" transform="rotate(-20 8 2)" />
+                                    <ellipse cx="16" cy="2" rx="4" ry="3" transform="rotate(20 16 2)" />
+                                    <!-- Box lid -->
+                                    <rect x="0" y="4" width="24" height="5" rx="1" fill="rgba(255,255,255,0.2)"/>
+                                    <!-- Box base -->
+                                    <rect x="2" y="9" width="20" height="15" rx="1" fill="rgba(255,255,255,0.1)"/>
+                                    <!-- Vertical ribbon -->
+                                    <line x1="12" y1="4" x2="12" y2="24"/>
+                                    <!-- Horizontal ribbon -->
+                                    <line x1="2" y1="16" x2="22" y2="16"/>
+                                </g>
+                                
+                                <text x="405" y="55" fill="url(#tealGrad)" font-family="Montserrat, sans-serif" font-size="13" font-weight="800" letter-spacing="1" text-anchor="middle">ПОДАРЪК</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Right Side: Text & Incentives -->
+                <div class="col-lg-7">
+                    <div class="pe-lg-2">
+                        <h2 class="text-uppercase mb-2" style="color: #ffffff; font-weight: 800; letter-spacing: 1px; font-size: 1.8rem; text-shadow: 0 2px 5px rgba(0,0,0,0.2);">Вземи своята <span style="color: #4db6ac;">Loyalty Card</span></h2>
+                        <p class="mb-3" style="color: #e9ecef; font-size: 1.15rem; font-weight: 400; line-height: 1.4;">
+                            Ако ни посетиш <strong>3 пъти в рамките на 3 месеца</strong>, 
+                            получаваш <strong style="color: #4db6ac; font-weight: 700; background: rgba(77, 182, 172, 0.15); padding: 1px 6px; border-radius: 4px;">1 безплатна процедура</strong> като подарък от нас!*
+                        </p>
+                        <p class="mb-3" style="font-size: 0.9rem; color: rgba(255,255,255,0.6); font-style: italic;">
+                            * Подаръкът важи за процедура на същата стойност като предходните.
+                        </p>
+                        
+                        <!-- Premium MultiSport Glassmorphism Card (Compact) -->
+                        <div class="p-2" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); border-left: 3px solid #4db6ac; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                            <div class="d-flex align-items-center mb-1">
+                                <i class="fas fa-info-circle me-2" style="font-size: 1.1rem; color: #4db6ac;"></i>
+                                <strong style="color: #ffffff; font-size: 1rem;">Използвате МултиСпорт карта?</strong>
+                            </div>
+                            <div style="color: rgba(255,255,255,0.85); font-size: 0.9rem; padding-left: 1.8rem; line-height: 1.3;">
+                                Възползвайте се от <strong style="color: #fff;">20% отстъпка</strong> при всяко посещение.<br>
+                                <div class="mt-1 p-1 rounded" style="background: rgba(255, 82, 82, 0.15); border-left: 2px solid #ff5252; color: #ffd6d6; font-size: 0.8rem; font-weight: 600; display: inline-block;">
+                                    <i class="fas fa-exclamation-triangle me-1"></i> Не се получават печати за Loyalty Card.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Packages Section-->
     <section class="page-section bg-white" id="packages">
         <div class="container">
